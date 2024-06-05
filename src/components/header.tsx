@@ -41,9 +41,9 @@ const suffix = (
   />
 );
 export const Header = () => {
-  const [current, setCurrent] = useState('');
   return(
-    <div className='flex justify-around w-full h-28 bg-white text-black items-center bg-sky-900'>
+    <div className='fixed top-0 left-0 w-full z-50 bg-sky-900'>
+     <div className='flex justify-around w-full h-28 text-black items-center'>
      <div className='font-bold'>
         <img src={LogoPianoChill.src} alt="Logo" width={125} height={125}/>
      </div>
@@ -56,6 +56,7 @@ export const Header = () => {
         <Link href={menuItemsData.url} key={menuItemsData.title} >{menuItemsData.title}</Link>
       )))}
      </div>
+    </div>
     </div>
   ); 
 };
