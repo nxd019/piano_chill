@@ -2,12 +2,9 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../globals.css";
 import AdminHome from "./page";
-import Footer from "@/components/footer";
-import Header from "@/components/header";
-
+import Sidebar from "@/components/sidebar";
 
 const inter = Inter({ subsets: ["latin"] });
-
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,11 +17,13 @@ export default function AdminLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" >
-    <body className={inter.className} >
-      <AdminHome/>
-      {children}
+    <html lang="en">
+      <body className={`${inter.className}`}>
+        <div className="flex">
+          <Sidebar/>
+          {children}
+        </div>
       </body>
-  </html>
+    </html>
   );
 }
