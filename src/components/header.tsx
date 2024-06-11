@@ -11,7 +11,7 @@ import type { SearchProps } from 'antd/es/input/Search';
 export const menuItemsData = [
     {
       title: "Khóa học",
-      url: "/course",
+      url: "/landingpage/course",
     },
     {
       title: "Sách",
@@ -27,8 +27,8 @@ export const menuItemsData = [
     },
     {
         title: "Tài khoản",
-        url: "/account",
-      },
+        url: "/landingpage/account",
+    },
 ]
 const { Search } = Input;
 const onSearch: SearchProps['onSearch'] = (value, _e, info) => console.log(info?.source, value);
@@ -48,9 +48,6 @@ export const Header = () => {
         <img src={LogoPianoChill.src} alt="Logo" width={125} height={125}/>
      </div>
      <Search placeholder="input search text" onSearch={onSearch} enterButton  style={{ width: 500 }}/>
-     
-    
-     
      <div className='flex gap-12 text-white text-bold'>
      {menuItemsData.map((menuItemsData => (
         <Link href={menuItemsData.url} key={menuItemsData.title} >{menuItemsData.title}</Link>
