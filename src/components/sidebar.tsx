@@ -4,9 +4,7 @@ import LogoPianoChill from "../../public/logoPianochill.png";
 export const Sidebar = () => {
     return(
       <div className="h-screen bg-sky-900 text-white w-64 flex-shrink-0">
-      <div className="p-4 text-xl font-bold border-b bg-sky-900">
-        <img src={LogoPianoChill.src} alt="Logo" width={125} height={125} />
-      </div>
+      
       <nav className="mt-4">
         <ul>
           <li className="p-4 hover:bg-gray-700">

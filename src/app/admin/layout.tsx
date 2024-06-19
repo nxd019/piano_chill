@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "../globals.css";
 import AdminHome from "./page";
 import Sidebar from "@/components/sidebar";
+import Header from "@/components/header";
+import HeaderAdmin from "@/components/headerAdmin";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +21,7 @@ export default function AdminLayout({
   return (
     <html lang="en">
       <body className={`${inter.className}`}>
+        <HeaderAdmin/>
         <div className="flex">
           <Sidebar/>
           {children}
