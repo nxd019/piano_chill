@@ -6,6 +6,8 @@ import LogoPianoChill from "../../public/logoPianochill.png"
 import { AudioOutlined } from '@ant-design/icons';
 import { Input, Space } from 'antd';
 import type { SearchProps } from 'antd/es/input/Search';
+import { SearchOutlined } from '@ant-design/icons';
+import { UserOutlined } from '@ant-design/icons';
 
 
 export const menuItemsData = [
@@ -30,16 +32,7 @@ export const menuItemsData = [
         url: "/landingpage/account",
     },
 ]
-const { Search } = Input;
-const onSearch: SearchProps['onSearch'] = (value, _e, info) => console.log(info?.source, value);
-const suffix = (
-  <AudioOutlined
-    style={{
-      fontSize: 16,
-      color: '#1677ff',
-    }}
-  />
-);
+
 export const Header = () => {
   return(
     <div className='fixed top-0 left-0 w-full z-50 bg-sky-900'>
@@ -47,7 +40,7 @@ export const Header = () => {
      <div className='font-bold'>
         <img src={LogoPianoChill.src} alt="Logo" width={125} height={125}/>
      </div>
-     <Search placeholder="input search text" onSearch={onSearch} enterButton  style={{ width: 500 }}/>
+     <Input size="large" placeholder="Tìm kiếm ...." className='w-4/12 rounded-3xl' prefix={<SearchOutlined style={{ fontSize: '16px'}} />} />
      <div className='flex gap-12 text-white text-bold'>
      {menuItemsData.map((menuItemsData => (
         <Link href={menuItemsData.url} key={menuItemsData.title} >{menuItemsData.title}</Link>

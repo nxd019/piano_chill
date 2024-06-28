@@ -3,8 +3,8 @@ import LogoPianoChill from "../../../public/logoPianochill.png";
 
 export default function AdminHome() {
   return (
-   <div>
-    abd
+   <div className="">
+    Chào mừng đến với quản ly PianoChill
    </div>
   );
 }

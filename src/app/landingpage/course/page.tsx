@@ -2,7 +2,7 @@ import CardImg from "@/components/Card/card";
 
 export const Course = () => {
     return(
-      <div className="w-full flex  justify-center"
+      <div className="w-full h-full flex  justify-center"
       style={{ 
         backgroundImage: `url('/banner.png')`,
         backgroundPosition: 'center',
