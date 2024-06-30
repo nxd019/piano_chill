@@ -32,7 +32,7 @@ export default function LoginForm() {
       }}
     >
       <div className="w-full max-w-md p-8 space-y-4 bg-opacity-100 rounded-xl shadow-lg bg-white">
-        <h2 className="text-2xl font-bold text-center">Chào mừng đến với Piano Chill</h2>
+        <h2 className="text-2xl font-bold text-center">Chào mừng đến với Chill Production</h2>
         <form className="space-y-4" onSubmit={handleSubmit(onSubmit)}>
           <div>
             <h1 className="text-md font-medium">Email:</h1>

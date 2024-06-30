@@ -11,7 +11,7 @@ export const Sidebar = () => {
             <Link href="/admin/course">Quản lý khóa học</Link>
           </li>
           <li className="p-4 hover:bg-sky-900 text-black">
-            <Link href="/admin/teacher">Quản lý giảng viên</Link>
+            <Link href="/admin/teacher">Quản lý danh sách giảng viên</Link>
           </li>
           <li className="p-4 hover:bg-sky-900 text-black">
             <Link href="/admin/notification">Quản lý thông báo</Link>

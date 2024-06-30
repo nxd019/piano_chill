@@ -33,7 +33,7 @@ export const CourseCard = (props: any) => {
     return (
         <div className="w-7/12 h-36 bg-white shadow-lg rounded-lg overflow-hidden flex mt-4 border border-gray-500">
         <img 
-          src="https://media.istockphoto.com/id/1431567498/vi/vec-to/vector-minh-h%E1%BB%8Da-c%C3%A1c-n%E1%BB%91t-nh%E1%BA%A1c-tr%E1%BA%AFng.jpg?s=612x612&w=0&k=20&c=EHyCs3t8lOnBJMwS8pUNVnXnaKgq6v4l76RfsBnfe5I=" 
+          src="https://watermark.lovepik.com/photo/20211120/large/lovepik-the-guitar-leaf-and-the-diary-picture_500465307.jpg" 
           alt="Header Image" 
           className="w-1/3 h-full object-cover border border-gray-300" 
         />
